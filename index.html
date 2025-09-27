@@ -698,13 +698,12 @@
               </div>
             </div><!-- End testimonial item -->
 
-  <!-- Cargar flag-icon-css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
-
-<!-- Testimonial con bandera -->
-<div class="swiper-slide">
+ <div class="swiper-slide">
   <div class="testimonial-item">
-    <span class="flag-circle flag-icon-gb"></span>
+    <!-- Bandera circular usando link de Wikipedia -->
+    <div class="testimonial-flag-circle">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag">
+    </div>
 
     <h3>Matt Brandon</h3>
     <h4>Freelancer</h4>
@@ -719,18 +718,20 @@
   </div>
 </div>
 
-<!-- CSS para que la bandera se vea circular -->
 <style>
-.testimonial-flag {
-  display: inline-block;       /* permite que se apliquen width/height y border-radius */
-  font-size: 80px;             /* tamaño de la bandera */
-  width: 80px;                 
+.testimonial-flag-circle {
+  width: 80px;
   height: 80px;
-  line-height: 80px;           /* centra la bandera verticalmente */
-  text-align: center;          /* centra horizontalmente */
-  border-radius: 50%;          /* círculo */
-  overflow: hidden;            /* recorta cualquier exceso */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* opcional */
+  border-radius: 50%;       /* círculo */
+  overflow: hidden;         /* recorta lo que sobra */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* sombra */
+  margin-bottom: 10px;
+}
+
+.testimonial-flag-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* asegura que la bandera llene el círculo */
 }
 </style>
 
