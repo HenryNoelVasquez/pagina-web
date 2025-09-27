@@ -698,13 +698,13 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+  <!-- Cargar flag-icon-css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
 
-<!-- Tu testimonial -->
+<!-- Testimonial con bandera -->
 <div class="swiper-slide">
   <div class="testimonial-item">
-    <!-- Reemplazamos la foto por la bandera del Reino Unido -->
-    <span class="flag-icon flag-icon-gb testimonial-img"></span>
+    <span class="flag-icon flag-icon-gb testimonial-flag"></span>
 
     <h3>Matt Brandon</h3>
     <h4>Freelancer</h4>
@@ -719,16 +719,18 @@
   </div>
 </div>
 
-<!-- CSS necesario para que la bandera se vea circular -->
+<!-- CSS para que la bandera se vea circular -->
 <style>
-.testimonial-img {
-  display: inline-block;      /* permite width y height */
-  width: 80px;                /* tamaño del círculo */
+.testimonial-flag {
+  display: inline-block;       /* permite que se apliquen width/height y border-radius */
+  font-size: 80px;             /* tamaño de la bandera */
+  width: 80px;                 
   height: 80px;
-  border-radius: 50%;         /* forma circular */
-  overflow: hidden;           /* recorta contenido que sobresalga */
-  font-size: 80px;            /* ajusta el tamaño de la bandera */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* sombra opcional */
+  line-height: 80px;           /* centra la bandera verticalmente */
+  text-align: center;          /* centra horizontalmente */
+  border-radius: 50%;          /* círculo */
+  overflow: hidden;            /* recorta cualquier exceso */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* opcional */
 }
 </style>
 
