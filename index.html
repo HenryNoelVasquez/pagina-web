@@ -698,9 +698,9 @@
               </div>
             </div><!-- End testimonial item -->
 
- <div class="swiper-slide">
+<div class="swiper-slide">
   <div class="testimonial-item">
-    <!-- Bandera circular usando link de Wikipedia -->
+    <!-- Bandera circular centrada -->
     <div class="testimonial-flag-circle">
       <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag">
     </div>
@@ -719,21 +719,27 @@
 </div>
 
 <style>
+/* Centrar todo el contenido del testimonial */
+.testimonial-item {
+  text-align: center;
+}
+
 .testimonial-flag-circle {
   width: 80px;
   height: 80px;
-  border-radius: 50%;       /* círculo */
-  overflow: hidden;         /* recorta lo que sobra */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* sombra */
-  margin-bottom: 10px;
+  border-radius: 50%;      
+  overflow: hidden;        
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  
+  margin: 0 auto 10px auto;   /* centrado horizontal + espacio abajo */
 }
 
 .testimonial-flag-circle img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* asegura que la bandera llene el círculo */
+  object-fit: cover;  
 }
 </style>
+
 
             <div class="swiper-slide">
               <div class="testimonial-item">
