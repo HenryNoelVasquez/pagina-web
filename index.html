@@ -698,21 +698,39 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <span class="flag-icon flag-icon-gb testimonial-img"></span>
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+<!-- Tu testimonial -->
+<div class="swiper-slide">
+  <div class="testimonial-item">
+    <!-- Reemplazamos la foto por la bandera del Reino Unido -->
+    <span class="flag-icon flag-icon-gb testimonial-img"></span>
+
+    <h3>Matt Brandon</h3>
+    <h4>Freelancer</h4>
+    <div class="stars">
+      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+    </div>
+    <p>
+      <i class="bi bi-quote quote-icon-left"></i>
+      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+      <i class="bi bi-quote quote-icon-right"></i>
+    </p>
+  </div>
+</div>
+
+<!-- CSS necesario para que la bandera se vea circular -->
+<style>
+.testimonial-img {
+  display: inline-block;      /* permite width y height */
+  width: 80px;                /* tamaño del círculo */
+  height: 80px;
+  border-radius: 50%;         /* forma circular */
+  overflow: hidden;           /* recorta contenido que sobresalga */
+  font-size: 80px;            /* ajusta el tamaño de la bandera */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  /* sombra opcional */
+}
+</style>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
