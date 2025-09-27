@@ -698,9 +698,10 @@
               </div>
             </div><!-- End testimonial item -->
 
+<!-- Testimonial con bandera del Reino Unido -->
 <div class="swiper-slide">
   <div class="testimonial-item">
-    <!-- Bandera circular centrada -->
+    <!-- Bandera circular en lugar de la foto -->
     <div class="testimonial-flag-circle">
       <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag">
     </div>
@@ -712,33 +713,43 @@
     </div>
     <p>
       <i class="bi bi-quote quote-icon-left"></i>
-      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+      <span>
+        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+      </span>
       <i class="bi bi-quote quote-icon-right"></i>
     </p>
   </div>
 </div>
 
+<!-- CSS -->
 <style>
-/* Centrar todo el contenido del testimonial */
+/* Centrar todo dentro del testimonial */
 .testimonial-item {
   text-align: center;
 }
 
+/* Bandera con efecto circular + fade como la foto original */
 .testimonial-flag-circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;      
-  overflow: hidden;        
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  
-  margin: 0 auto 10px auto;   /* centrado horizontal + espacio abajo */
+  width: 100px;               /* tamaño del círculo */
+  height: 100px;
+  border-radius: 50%;         /* círculo */
+  overflow: hidden;           
+  margin: 0 auto 15px auto;   /* centrado con espacio abajo */
+
+  /* 🔹 Efectos para imitar la foto original */
+  border: 6px solid #fff;                /* marco blanco */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);  /* sombra difusa */
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-flag-circle img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  
+  object-fit: cover;   /* ajusta la bandera al círculo */
 }
 </style>
+
 
 
             <div class="swiper-slide">
