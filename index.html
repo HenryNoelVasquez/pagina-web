@@ -929,10 +929,10 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-<!-- WhatsApp Floating Button -->
+<!-- WhatsApp Floating Button Modern -->
 <div class="whatsapp-wrapper">
   <div class="whatsapp-label">Contact me</div>
-  <a href="https://wa.me/50765661071" target="_blank" class="whatsapp-button">
+  <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
     <i class="bi bi-whatsapp"></i>
   </a>
 </div>
@@ -941,44 +941,51 @@
 /* Contenedor del botón */
 .whatsapp-wrapper {
   position: fixed;
-  bottom: 15px; /* sube el botón un poco sobre la flecha de scroll */
+  bottom: 15px;
   right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Etiqueta encima del botón */
 .whatsapp-label {
-  background-color: #25D366; /* verde WhatsApp */
+  background: linear-gradient(135deg, #25D366, #128C7E);
   color: white;
   font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 12px;
-  margin-bottom: 5px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  margin-bottom: 6px;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s;
 }
 
-/* Botón circular */
+.whatsapp-wrapper:hover .whatsapp-label {
+  transform: translateY(-2px);
+}
+
+/* Botón circular con gradiente y sombra */
 .whatsapp-button {
-  background-color: #25D366;
+  background: linear-gradient(135deg, #25D366, #128C7E);
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  font-size: 26px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   text-decoration: none;
-  transition: transform 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .whatsapp-button:hover {
-  transform: scale(1.1);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
 }
 </style>
 
